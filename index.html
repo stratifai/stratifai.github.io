@@ -3,34 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stratifai - Asset Management Platform</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
+    <title>Stratifai - Asset Management</title>
+    <link href="styles.css" rel="stylesheet" />
   </head>
 
-  <body class="bg-gray-900 text-white">
-    <div class="container mx-auto px-4">
-      <header class="flex items-center justify-between py-4">
-        <h1 class="text-2xl font-bold">Stratifai</h1>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Stratifai</h1>
         <nav>
-          <ul class="flex space-x-4">
-            <li><a href="#" class="hover:text-gray-300">Home</a></li>
-            <li><a href="#" class="hover:text-gray-300">Features</a></li>
-            <li><a href="#" class="hover:text-gray-300">Pricing</a></li>
-            <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </nav>
       </header>
 
-      <section class="hero text-center py-20">
-        <h2 class="text-5xl mb-4">Mission Control for Asset Management</h2>
-        <p class="text-xl">
-          Experience the future of asset management with our cutting-edge,
-          vertical enterprise SaaS platform.
-        </p>
+      <section class="hero">
+        <h2>Mission Control for Asset Management</h2>
+        <p>Vertical enterprise SaaS platform.</p>
       </section>
     </div>
+    <div id="particles-js"></div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: { value: 100, density: { enable: true, value_area: 800 } },
+          color: { value: "#ffffff" },
+          shape: {
+            type: "circle",
+            stroke: { width: 0, color: "#000000" },
+            polygon: { nb_sides: 5 },
+          },
+          opacity: {
+            value: 0.5,
+            random: false,
+            anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
+          },
+          size: {
+            value: 3,
+            random: true,
+            anim: { enable: false, speed: 40, size_min: 0.1, sync: false },
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#ffffff",
+            opacity: 0.4,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 3,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: { enable: false, rotateX: 600, rotateY: 1200 },
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: { enable: true, mode: "repulse" },
+            onclick: { enable: true, mode: "push" },
+            resize: true,
+          },
+          modes: {
+            grab: { distance: 400, line_linked: { opacity: 1 } },
+            bubble: {
+              distance: 400,
+              size: 40,
+              duration: 2,
+              opacity: 8,
+              speed: 3,
+            },
+            repulse: { distance: 200, duration: 0.4 },
+            push: { particles_nb: 4 },
+            remove: { particles_nb: 2 },
+          },
+        },
+        retina_detect: true,
+      });
+    </script>
   </body>
 </html>
