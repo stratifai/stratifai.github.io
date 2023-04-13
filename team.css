@@ -1,0 +1,38 @@
+.team {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.team h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    max-width: 300px;
+    margin-bottom: 2rem;
+}
+
+.team-member img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.team-member p {
+    font-size: 1.1rem;
+    color: #ccc;
+}
